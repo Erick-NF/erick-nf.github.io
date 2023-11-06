@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Grafica de Simpson</title>
+    <script src="chart.js"></script>
+</head>
+<body>
+    <canvas id="Grafica" width="400" height="300"></canvas>
+</body>
+<header>
+    <div class="container">
+        <p class="logo">Proyecto Integrador 5to Semestre</p>
+        <nav>
+            <ul class="Menu">
+            <a href="index.html">Inicio</a>
+            <a href="MN.html"> Métodos Numericos</a>
+            <a href="DAM.html">Desarollo de Aplicaciones Moviles</a>
+            <a href="grafica.html">Grafica</a>
+            </ul>
+        </nav>
+    </div>
+</header>
+    <script>
+        let miCanvas=document.getElementById("Grafica").getContext("2d");
+
+        var chart = new Chart(miCanvas,{
+            type:"bar",
+            data:{
+                labels:["Pasos","Xi","F(Xi)","Coeficiente","Resultado"],
+                datasets:[
+                    {
+                        label:"Grafica de Simpson",
+                        backgroundColor:"rgba(0,23,23,0.3)",
+                        borderColor:"blue",
+                        data:[23,1.72,60,1.5]
+                    }
+                ]
+            }
+        })
+    </script>
+    <script src="grafica.js"></script>
+</html>

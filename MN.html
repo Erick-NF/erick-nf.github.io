@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>PI-5to</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <p class="logo">Proyecto Integrador 5to Semestre</p>
+            <nav>
+                <ul class="Menu">
+                <a href="index.html">Inicio</a>
+                <a href="MN.html"> Métodos Numericos</a>
+                <a href="DAM.html">Desarollo de Aplicaciones Moviles</a>
+                <a href="grafica.html">Grafica</a>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <center>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <h1>"Método de Simpson"</h1>
+        <br>
+        <br>
+        <img src="img/formula.png" alt="">
+        <br>
+        <br>
+        <h1>¿Qué es?</h1>
+        <p>
+            La regla o método de Simpson (nombrada así en honor de Thomas Simpson) y 
+            a veces llamada regla de Kepler es un método de integración numérica que 
+            se utiliza para obtener la aproximación de la integral
+            <br>
+            <br>
+            Se requiere de 3 conceptos que son la clav de la solucion
+            del mismo metodo como son:
+            <br>
+            f(x)= Es donde se llama a la integridad
+            <br>
+            a= Al limite inferior de la integracion 
+            <br>
+            b= Al limite superior de la integracion
+        </p>
+        <br>
+        <br>
+        <h1>¿Para qué sirve?</h1>
+        <p>
+            Calcula una integral definida al calcular el área de 
+            solapamiento de segmentos parabólicos en el intervalo 
+             de integración y luego sumándolos
+        </p>
+        <br>
+        <br>
+        <h1>Características</h1>
+        <p>
+            El método de Simpson es un método muy preciso y eficiente para aproximar el valor de una integral 
+            definida,especialmente cuando la función a integrar es suave y continua. Sin embargo, es importante 
+            tener en cuenta que este método puede no funcionar bien si la función tiene singularidades o puntos 
+            de inflexión cercanos a los puntos de integración.
+        </p>
+    </center>
+
+    <center>
+        <p>
+        <h1>
+        Ejemplos de la Vida Real
+        </h1>
+        <br>
+        <br>
+        Construcción de Carreteras
+        <br>
+        Construcción de Puentes
+        <br>
+        
+        </p>
+    </center>
+
+    <center>
+        <section>
+          <h1 style="color: rgb(5, 5, 5); font-size: 50px;">Diagrama de flujo</h1>
+          <br>
+          <img src="img/diagrama.jpeg" width="800px" height="700px">
+          <br>
+          <br>
+        </section>
+      </center>
+
+    <center>
+        <div>
+          <form id="input-form">
+            <label for="a">Límite inferior (a):</label>
+            <input type="number" id="a" name="a" required>
+            <br>
+            <br>
+            <label for="b">Límite superior (b):</label>
+            <input type="number" id="b" name="b" required>
+            <br>
+            <br>
+            <label for="n">Número de interaciones:</label>
+            <input type="number" id="n" name="n" required>
+            <br>
+            <br>
+            <button type="submit">Calcular área</button>
+            <br>
+            <br>
+          </form>
+          <p id="output"></p>
+        </div>
+        <br>
+        <br>
+      </center>
+
+    <section id="final">
+        <h2></h2>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; PI 2023</p>
+        </div>
+    </footer>
+<script src="app.js"></script>
+</body>
+</html>
